@@ -33,13 +33,13 @@ The data is indexed by <seq_num> folders. In each folder, it contains images and
 
 ## <div align="">Benchmark</div>
 
-Overall benchmark
+<font size="30"> Overall benchmark: </font>
 <img src='pics/overall.png'>
 
-Sample spaceType breakdown
+<font size="30"> Sample SpaceType breakdown: </font>
 <img src='pics/type.png'>
 
-sample heirarchy labeling and breakdown
+<font size="30"> Sample heirarchy labeling and breakdown: </font>
 <img src='pics/heirarchy.png'>
 
 
