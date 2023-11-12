@@ -4,7 +4,7 @@ This repository includes codes for reproducing benchmark reuslts for the paper.
 
 This work is presented in CoRL 2023 OOD Workshops
 
-[Long version paper](https://arxiv.org/abs/2309.13516) [Workshop Page](https://openreview.net/forum?id=SYz0lN3n0H) [Project Page](https://depthcomputation.github.io/DepthPublic/)
+[[Long version paper]](https://arxiv.org/abs/2309.13516) [[Workshop Page]](https://openreview.net/forum?id=SYz0lN3n0H) [[Project Page]](https://depthcomputation.github.io/DepthPublic/)
 
 ## <div align="">Data</div>
 
