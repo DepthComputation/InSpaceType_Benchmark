@@ -2,6 +2,9 @@
 
 This repository includes codes for reproducing benchmark reuslts for the paper.
 
+This work is presented in CoRL 2023 OOD Workshops
+
+[Long version paper](https://arxiv.org/abs/2309.13516) [Workshop Page](https://openreview.net/forum?id=SYz0lN3n0H) [Project Page](https://depthcomputation.github.io/DepthPublic/)
 
 ## <div align="">Data</div>
 
@@ -68,6 +71,18 @@ Unlike previous methods that focus on algorithmic developments, we are the first
 
 
 Please refer to the paper and the supplementary for the full results.
+
+## <div align="">Bibtex</div>
+
+If you find our work useful, please consider to cite our work 
+
+    @article{wu2023inspacetype,
+          title={InSpaceType: Reconsider Space Type in Indoor Monocular Depth Estimation},
+          author={Wu, Cho-Ying and Gao, Quankai and Hsu, Chin-Cheng and Wu, Te-Lin and Chen, Jing-Wen and Neumann, Ulrich},
+          journal={arXiv preprint arXiv:2309.13516},
+          year={2023}
+        }
+
 
 ## License
 The dataset is CC BY-SA 4.0 licensed.
