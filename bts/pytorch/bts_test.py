@@ -281,28 +281,28 @@ def test(params):
 
 
     for i in range(1):
-        f = open(f'evaluation-bts_test-all.txt','w')
+        f = open(f'evaluation-bts-all.txt','w')
         metric_set = global_metr[i]
         for num in metric_set:
             f.write(str(num))
         f.close()
 
     for i in range(4):
-        f = open(f'evaluation-bts_test-H0_{i+1}.txt','w')
+        f = open(f'evaluation-bts-H0_{i+1}.txt','w')
         metric_set = H0_metr[i]
         for num in metric_set:
             f.write(str(num))
         f.close()
 
     for i in range(12):
-        f = open(f'evaluation-bts_test-H1_{i+1}.txt','w')
+        f = open(f'evaluation-bts-H1_{i+1}.txt','w')
         metric_set = H1_metr[i]
         for num in metric_set:
             f.write(str(num))
         f.close()
     
     for i in range(27):
-        f = open(f'evaluation-bts_test-H2_{i+1}.txt','w')
+        f = open(f'evaluation-bts-H2_{i+1}.txt','w')
         metric_set = H2_metr[i]
         for num in metric_set:
             f.write(str(num))

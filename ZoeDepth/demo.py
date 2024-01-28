@@ -9,9 +9,9 @@ import os
 import pandas as pd
 import argparse
 from PIL import Image
-from zoedepth.utils.misc import colorize
-# Zoe_N
-model_zoe_n = torch.hub.load(".", "ZoeD_N", source="local", pretrained=True)
+from zoedepthdepth.utils.misc import colorize
+# zoedepth_N
+model_zoedepth_n = torch.hub.load(".", "zoedepthD_N", source="local", pretrained=True)
 
 
 parser = argparse.ArgumentParser()
@@ -80,12 +80,12 @@ def compute_depth_errors(gt, pred):
 
     return abs_mn, abs_rel, sq_rel, rmse, rmse_log, a1, a2, a3
 
-# Zoe_N
-model_zoe_n = torch.hub.load(".", "ZoeD_N", source="local", pretrained=True)
+# zoedepth_N
+model_zoedepth_n = torch.hub.load(".", "zoedepthD_N", source="local", pretrained=True)
 
 ##### sample prediction
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-zoe = model_zoe_n.to(DEVICE)
+zoedepth = model_zoedepth_n.to(DEVICE)
 
 img_names = sorted(glob.glob(os.path.join(args.input_path, "*_L.jpg")))
 num_images = len(img_names)
@@ -158,7 +158,7 @@ for ind, img_name in enumerate(img_names):
     # input
 
     image = Image.open(img_name).convert("RGB")
-    prediction = zoe.infer_pil(image, output_type="tensor")
+    prediction = zoedepth.infer_pil(image, output_type="tensor")
 
 
     filename = os.path.join(
@@ -195,28 +195,28 @@ for ind, img_name in enumerate(img_names):
 
 
 for i in range(1):
-    f = open(f'evaluation-zoe-global_{i}.txt','w')
+    f = open(f'evaluation-zoedepth-all_{i}.txt','w')
     metric_set = global_metr[i]
     for num in metric_set:
         f.write(str(num))
     f.close()
 
 for i in range(4):
-    f = open(f'evaluation-zoe-H0_{i}.txt','w')
+    f = open(f'evaluation-zoedepth-H0_{i}.txt','w')
     metric_set = H0_metr[i]
     for num in metric_set:
         f.write(str(num))
     f.close()
 
 for i in range(12):
-    f = open(f'evaluation-zoe-H1_{i}.txt','w')
+    f = open(f'evaluation-zoedepth-H1_{i}.txt','w')
     metric_set = H1_metr[i]
     for num in metric_set:
         f.write(str(num))
     f.close()
 
 for i in range(27):
-    f = open(f'evaluation-zoe-H2_{i}.txt','w')
+    f = open(f'evaluation-zoedepth-H2_{i}.txt','w')
     metric_set = H2_metr[i]
     for num in metric_set:
         f.write(str(num))
