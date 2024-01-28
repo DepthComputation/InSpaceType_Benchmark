@@ -1,0 +1,13 @@
+/home/choyingw/Documents/ZED/1000_select_split/0001_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0002_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0003_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0004_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0005_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0006_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0007_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0008_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0009_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0010_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0011_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0012_L.jpg
+/home/choyingw/Documents/ZED/1000_select_split/0013_L.jpg
