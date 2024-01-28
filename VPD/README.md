@@ -4,7 +4,7 @@
 
 2. Follow [VPD depth](https://github.com/wl-zhao/VPD/blob/main/depth/README.md) first step to install mmcv and requirements. Then download [VPD depth pretrained](https://cloud.tsinghua.edu.cn/f/7e4adc76cc9b4200ac79/?dl=1) and put it under checkpoints/
 
-3. Download InSpaceType eval set and put it under root VPD folder.
+3. Download InSpaceType eval set and put it under root folder.
 
 4. 
 
