@@ -29,7 +29,7 @@ InSpaceType
 
 ## <div align="">Analysis tool</div>
 
-Go to each method subfolder (last updated: 01272024, keep updating) and see respective README instruction for evalution. All the execution results contain a pile of *.txt file. *-all means overall performance. H1-H3 means level of hierarchy. and H1_xx means scene space type number. See [space_type_def.yml](https://github.com/DepthComputation/InSpaceType_Benchmark/blob/main/space_type_def.yml) for space type number definition.
+Go to each method subfolder (last updated: 12 recent SOTA methods, keep growing and updating with the trends) and see respective README instruction for evalution. All the execution results contain a pile of *.txt file. *-all means overall performance. H1-H3 means level of hierarchy. and H1_xx means scene space type number. See [space_type_def.yml](https://github.com/DepthComputation/InSpaceType_Benchmark/blob/main/space_type_def.yml) for space type number definition.
 
 
 [InSpaceType all data](https://drive.google.com/drive/folders/1EjdInytpvYWBT3BmQIDsTzFyP0dngP1U?usp=sharing): This contains 40K RGBD pairs, about 500G the whole InSpaceType dataset. The whole data is split into 8 chunks. Please download all chunks in the folder and extract them.
