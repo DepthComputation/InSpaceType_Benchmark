@@ -1,47 +1,47 @@
-H1:
-1: Household space
+H0:
+1: Household Space
 2: Workspace
 3: Campus
-4: Functional space
+4: Functional Space
+
+H1:
+1: Private
+2: Office
+3: Hallway
+4: Lounge
+5: Meeting
+6: Large
+7: Classroom
+8: Library
+9: Kitchen
+10: Playroom
+11: Living
+12: Bathroom
 
 H2:
-1: private
-2: office
-3: hallway
-4: lounge
-5: meeting
-6: large
-7: classroom
-8: library
-9: kitchen
-10: playroom
-11: living
-12: bathroom
-
-H3:
 1: Hotel Room
-2: Western-style bedroom
-3: Eastern-style bedroom
-4: storage room
-5: dressing room
-6: entrance
-7: Private chamber
-8: lab space
-9: mail room
-10: Eastern-style workspace
-11: narrow hallway
-12: wider hallway
-13: lounge
-14: meeting room
-15: auditorium
-16: reception desk
-17: banquet room
+2: Western-style Bedroom
+3: Eastern-style Bedroom
+4: Storage Room
+5: Dressing Room
+6: Entrance
+7: Private Chamber
+8: Lab Space
+9: Mail Room
+10: Eastern-style Workspace
+11: Narrow Hallway
+12: Wider Hallway
+13: Lounge
+14: Meeting Room
+15: Auditorium
+16: Reception Desk
+17: Banquet Room
 18: Auditorium Entryway
-19: classroom
-20: study spaces
-21: bookshelf
-22: Asian-style kitchen
-23: playroom
-24: Asian style living room
-25: American Style living room
-26: bathroom
+19: Classroom
+20: Study Space
+21: Bookshelf
+22: Asian-style Kitchen
+23: Playroom
+24: Asian-style Living Room
+25: American-Style Living Room
+26: Bathroom
