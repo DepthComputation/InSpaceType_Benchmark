@@ -27,6 +27,28 @@ InSpaceType
         |---- ...
 ```
 
+## <div align="">SOTA update</div>
+
+* Depth-Anything (updated Jan 29, 2024, inference by its metric depth model finetuned on NYUv2)
+
+In short, Depth-Anything outperforms ZoeDepth in errors metrics and delta_3. Depth-Anything is also surprisingly a robust method across different space types, where errors and delta did not suffer from large variation. Compared with ZoeDepth, which has much lower performance in large room, kitchen, and hallway, but Depth-Anything is quite steady in those evaluations
+
+| Depth-Anything | AbsRel | SqRel | RMSE | delta_1 | delta_2 | delta_3 |
+|-------------|-------------|--------------|-----------|------|-----------|---------|
+| Private room | 0.0836  | 0.0297 | 0.2500 | 91.87  | 98.78 | 99.80 |
+| Office | 0.0990  | 0.0454 | 0.313 | 88.12  | 97.61 | 99.45 | 
+| Hallway | 0.1074  | 0.0683 | 0.4726 | 87.02  | 96.55 | 99.05 | 
+| Lounge | 0.1053  | 0.0920 | 0.631 | 88.34  | 97.69 | 99.33 | 
+| Meeting Room | 0.0899  | 0.0462 | 0.3591 | 90.28  | 98.52 | 99.76 | 
+| Large Room | 0.1051  | 0.0974 | 0.686 | 88.61  | 97.91 | 99.27 | 
+| Classroom| 0.0870  | 0.0426 | 0.3465 | 90.24  | 98.61 | 99.81 | 
+| Library |0.0947  | 0.0641 | 0.5150 | 90.08  | 98.09 | 99.43 | 
+| Kitchen | 0.0863  | 0.0390 | 0.2480 | 91.97  | 97.99 | 99.13 | 
+| Playroom |0.0871  | 0.0416 | 0.3453 | 91.23  | 98.38 | 99.62 | 
+| Living Room | 0.0921  | 0.0472 | 0.3448 | 90.26  | 97.80 | 99.47 | 
+| Bathroom | 0.0860  | 0.0337 | 0.1965 | 92.71  | 99.72 | 98.76 | 
+| Overall | 0.0928 | 0.0506 | 0.3806 | 90.01 | 98.09 | 99.54 |
+
 ## <div align="">Analysis tool</div>
 
 Go to each method subfolder (last updated: 12 recent SOTA methods, keep growing and updating with the trends) and see respective README instruction for evalution. All the execution results contain a pile of *.txt file. *-all means overall performance. H0-H2 means level of hierarchy. and H1_xx means scene space type number. See [space_type_def.yml](https://github.com/DepthComputation/InSpaceType_Benchmark/blob/main/space_type_def.yml) for space type number definition.
