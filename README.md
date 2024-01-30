@@ -29,9 +29,9 @@ InSpaceType
 
 ## <div align="">SOTA update</div>
 
-* Depth-Anything (updated Jan 29, 2024, inference by its metric depth model finetuned on NYUv2)
+* [Depth-Anything](https://github.com/LiheYoung/Depth-Anything) v.s. [ZoeDepth](https://github.com/isl-org/ZoeDepth) (updated Jan 29, 2024, inference by its metric depth model finetuned on NYUv2)
 
-In short, Depth-Anything outperforms ZoeDepth in errors metrics and delta_3. Depth-Anything is also surprisingly a robust method across different space types, where errors and delta did not suffer from large variation. Compared with ZoeDepth, which has much lower performance in large room, kitchen, and hallway, but Depth-Anything is quite steady in those evaluations
+In short, Depth-Anything outperforms ZoeDepth and VPD in errors metrics and delta_3. Depth-Anything is also surprisingly a robust method across different space types, where errors and delta did not suffer from large variation across different space types. Compared with ZoeDepth, which has much lower performance (errors and delta_1) in large room, kitchen, and hallway, but Depth-Anything is quite steady in those evaluations
 
 | Depth-Anything | AbsRel | SqRel | RMSE | delta_1 | delta_2 | delta_3 |
 |-------------|-------------|--------------|-----------|------|-----------|---------|
@@ -48,6 +48,40 @@ In short, Depth-Anything outperforms ZoeDepth in errors metrics and delta_3. Dep
 | Living Room | 0.0921  | 0.0472 | 0.3448 | 90.26  | 97.80 | 99.47 | 
 | Bathroom | 0.0860  | 0.0337 | 0.1965 | 92.71  | 99.72 | 98.76 | 
 | Overall | 0.0928 | 0.0506 | 0.3806 | 90.01 | 98.09 | 99.54 |
+
+| ZoeDepth (N) | AbsRel | SqRel | RMSE | delta_1 | delta_2 | delta_3 |
+|-------------|-------------|--------------|-----------|------|-----------|---------|
+| Private room | 0.0798  | 0.0253 | 0.2218 | 93.86  | 99.44 | 99.90 |
+| Office | 0.0978  | 0.0447 | 0.3102 | 90.07  | 97.80 | 99.52 | 
+| Hallway|  0.1193 | 0.0741 | 0.5271 | 85.84 | 96.95 | 99.10 |
+| Lounge | 0.1172 | 0.1110 | 0.7033 | 86.61 | 97.02 | 99.11 | 
+| Meeting Room |  0.0887 | 0.0391 | 0.3379 | 93.55 | 99.05 | 99.79  | 
+| Large Room |  0.1565 | 0.1701 | 0.9157  | 77.19 | 94.95 | 99.33 |
+| Classroom | 0.0719 | 0.0282 | 0.2873| 95.37 | 99.43 | 99.91 |
+| Library | 0.1163 | 0.0875 | 0.6274 | 87.34 | 96.93 | 98.99  | 
+| Kitchen | 0.1256 | 0.0589 | 0.2825  | 87.10 | 96.70 | 98.00 | 
+| Playroom | 0.0790 | 0.0300 | 0.2508 | 94.21 | 98.09 | 99.88 |
+| Living Room | 0.0862 | 0.0390 | 0.3036  | 91.72 | 98.31 | 99.58  |  
+| Bathroom |  0.1065 | 0.0358 | 0.1880 | 93.64 | 97.64 | 98.17 |
+| Overall | 0.0962 | 0.0533 | 0.3890 | 90.81 | 98.22 | 99.52 |
+
+* Added [VPD](https://vpd.ivg-research.xyz/)
+
+| VPD | AbsRel | SqRel | RMSE | delta_1 | delta_2 | delta_3 |
+|-------------|-------------|--------------|-----------|------|-----------|---------|
+| Private room | 0.0768  | 0.0325 | 0.2428 | 93.76  | 98.70 | 99.60 |
+| Office | 0.1019  | 0.0548 | 0.3374 | 89.52  | 97.52 | 99.26 | 
+| Hallway | 0.1174  | 0.0828 | 0.5233 | 86.66  | 96.40 | 98.72 | 
+| Lounge | 0.1313  | 0.1286 | 0.7306 | 83.06  | 95.90 | 98.83 | 
+| Meeting Room | 0.0992  | 0.0568 | 0.3742 | 91.51  | 98.262 | 99.43 | 
+| Large Room | 0.1292  | 0.1460 | 0.7903 | 83.90  | 95.87 | 98.89 | 
+| Classroom| 0.0744  | 0.0344 | 0.3034 | 94.73  | 98.94 | 99.72 | 
+| Library |0.1258  | 0.1311 | 0.6885 | 85.22  | 95.34 | 98.62 | 
+| Kitchen | 0.0958  | 0.0538 | 0.2469 | 92.56  | 96.36 | 98.64 | 
+| Playroom |0.0735  | 0.0313 | 0.2574 | 95.17  | 98.38 | 99.83 | 
+| Living Room | 0.0910  | 0.0510 | 0.3490 | 91.45  | 97.59 | 99.25 | 
+| Bathroom | 0.0955  | 0.0472 | 0.2279 | 92.95  | 97.04 | 97.98 | 
+| Overall | 0.0983 | 0.0661 | 0.1412 | 90.23 | 97.48 | 99.22 |
 
 ## <div align="">Analysis tool</div>
 
