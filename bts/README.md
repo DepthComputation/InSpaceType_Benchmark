@@ -11,5 +11,5 @@
   python bts_test.py  --dataset nyu --filenames_file ../train_test_inputs/split_files.txt --checkpoint_path models/bts_nyu_v2_pytorch_densenet161/model --max_depth 10 --encoder densenet161_bts --model_name bts_nyu_v2_pytorch_densenet161
   ```
 
-  The command generates report files for hierarchy (H1-H3). *-all means overall H1-H3 means level of hierarchy. H1_xx means scene space type number. See [space_type_def.yml](https://github.com/DepthComputation/InSpaceType_Benchmark/blob/main/space_type_def.yml) for space type number definition.
+  The command generates report files for hierarchy (H0-H2). *-all means overall H0-H2 means level of hierarchy. H1_xx means scene space type number. See [space_type_def.yml](https://github.com/DepthComputation/InSpaceType_Benchmark/blob/main/space_type_def.yml) for space type number definition.
 
