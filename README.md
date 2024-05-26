@@ -29,6 +29,26 @@ InSpaceType
 
 ## <div align="">SOTA update</div>
 
+* Add [Unidepth](https://github.com/lpiccinelli-eth/UniDepth)
+
+| Unidepth | AbsRel | SqRel | RMSE | delta_1 | delta_2 | delta_3 |
+|-------------|-------------|--------------|-----------|------|-----------|---------|
+| Private room | 0.0609  | 0.0163 | 0.1805 | 96.94  | 99.50 | 99.89 |
+| Office | 0.0788  | 0.0322 | 0.2608 | 93.25  | 98.44 | 99.64 | 
+| Hallway | 0.0871  | 0.0566 | 0.4608 | 90.83  | 97.14 | 99.10 | 
+| Lounge | 0.0860  | 0.0663 | 0.5312 | 93.24  | 98.39 | 99.41 | 
+| Meeting Room | 0.0764  | 0.0330 | 0.2992 | 94.66  | 99.12 | 99.79 | 
+| Large Room | 0.0871  | 0.0688 | 0.5370 | 94.10  | 98.46 | 99.26 | 
+| Classroom| 0.0601  | 0.0233 | 0.2589 | 96.67  | 99.52 | 99.93 | 
+| Library | 0.0800  | 0.0498 | 0.4505 | 93.63  | 98.27 | 99.40 | 
+| Kitchen | 0.0662  | 0.0235 | 0.2027 | 95.42  | 98.80 | 99.34 | 
+| Playroom |0.0544  | 0.0182 | 0.1983 | 95.60  | 99.30 | 99.89 | 
+| Living Room | 0.0670  | 0.0312 | 0.2758 | 94.87  | 98.54 | 99.58 | 
+| Bathroom | 0.0765  | 0.0252 | 0.1600 | 96.40 | 98.00 | 98.52 | 
+| Overall | 0.0718 | 0.0349 | 0.3132 | 94.76 | 98.75 | 99.62 |
+
+Summary: Unidepth is very high-performing with much higher performance than other on the zero-shot benchmark.
+
 * [Depth-Anything](https://github.com/LiheYoung/Depth-Anything) v.s. [ZoeDepth](https://github.com/isl-org/ZoeDepth) (updated Jan 29, 2024, inference by its metric depth model finetuned on NYUv2)
 
 In short, Depth-Anything outperforms ZoeDepth and VPD in errors metrics and delta_3. Depth-Anything is also surprisingly a robust method across different space types, where errors and delta did not suffer from large variation across different space types. Compared with ZoeDepth, which has much lower performance (errors and delta_1) in large room, kitchen, and hallway, but Depth-Anything is quite steady in those evaluations
