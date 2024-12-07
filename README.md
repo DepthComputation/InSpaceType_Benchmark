@@ -1,10 +1,10 @@
-# <div align=""> InSpaceType: Reconsider Space Type in Indoor Monocular Depth Estimation </div>
+# <div align=""> [BMVC 2024] InSpaceType: Reconsider Space Type in Indoor Monocular Depth Estimation </div>
 
 This repository includes codes for reproducing benchmark reuslts for the paper.
 
-This work is presented in CoRL 2023 OOD Workshops
+This work is presented in BMVC 2024 and CoRL 2023 OOD Workshops
 
-[[Long version paper]](https://arxiv.org/abs/2309.13516) [[Supplementary Material]](https://drive.google.com/file/d/1KO2xJ7e9WoSdeiEkBXDAQwjZnuSKvNXm/view?usp=sharing) [[Workshop Page]](https://openreview.net/forum?id=SYz0lN3n0H) [[Project Page]](https://depthcomputation.github.io/DepthPublic/)
+[[Project Page]](https://depthcomputation.github.io/DepthPublic/) [[Long version paper]](https://arxiv.org/abs/2408.13708) [[Supplementary Material]](https://drive.google.com/file/d/1KO2xJ7e9WoSdeiEkBXDAQwjZnuSKvNXm/view?usp=sharing) [[Workshop Page]](https://openreview.net/forum?id=SYz0lN3n0H) 
 
 ## <div align="">Data</div>
 
